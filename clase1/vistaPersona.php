@@ -2,9 +2,8 @@
     require '../config/funciones.php';
     require 'Persona.php';
     //instanciar
-    $Persona = new Persona;
-    $Persona->setNombre('Cosme');
-    $Persona->setApellido('Fulanito');
+    $Persona = new Persona('Ronnie', 'Woods');
+
     mostrar($Persona);
 
 ?>
