@@ -12,5 +12,5 @@
 > En cambio cuando programamos orientado a objetos, 
 > estos estan íntimamente relacionados en lo que conocemos como estado.   
 
-[img1]: /clase1/vs.png "procedural vs oop"
+ ![procedural vs oop] (./clase1/vs.png)
 
