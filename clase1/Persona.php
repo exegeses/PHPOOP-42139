@@ -8,6 +8,16 @@
 
         ## métodos
 
+        public function verDatos()
+        {
+            $mensaje = 'Nombre: '.$this->getNombre();
+            $mensaje .= '<br>';
+            $mensaje .= 'Apellido: '.$this->getApellido();
+            $mensaje .= '<br>';
+            return $mensaje;
+        }
+
+
         /**
          * @return mixed
          */
@@ -39,4 +49,5 @@
         {
             $this->apellido = $apellido;
         }
+
     }
