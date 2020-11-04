@@ -5,10 +5,8 @@
         </a>
 
 
-        <a class="py-2" href="adminMarcas.php">Marcas</a>
-        <a class="py-2" href="adminCategorias.php">Categorías</a>
-        <a class="py-2" href="adminProductos.php">Productos</a>
-        <a class="py-2" href="adminUsuarios.php">Usuarios</a>
+        <a class="py-2" href="adminRegiones.php">Regiones</a>
+        <a class="py-2" href="adminDestinos.php">Destinos</a>
 
 
         <button class="btn btn-dark">
