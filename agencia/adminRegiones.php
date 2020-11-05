@@ -26,12 +26,12 @@
                     <td>región</td>
                     <td>
                         <a href="" class="btn btn-outline-secondary">
-                            modificar
+                            Modificar
                         </a>
                     </td>
                     <td>
                         <a href="" class="btn btn-outline-secondary">
-                            modificar
+                            Eliminar
                         </a>
                     </td>
                 </tr>
