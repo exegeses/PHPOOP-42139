@@ -3,6 +3,8 @@ html {
     min-height: 100%;
 }
 body {
+    font-family: Raleway, Tahoma, sans-serif;
+    font-size: 1em;
     margin-bottom: 60px; /* Margin bottom by footer height */
 }
 
