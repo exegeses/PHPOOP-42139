@@ -18,7 +18,7 @@
                     <th>#</th>
                     <th>Región</th>
                     <th>
-                        <a href="" class="btn btn-outline-secondary">
+                        <a href="formAgregarRegion.php" class="btn btn-outline-secondary">
                             Agregar
                         </a>
                     </th>
