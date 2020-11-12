@@ -32,7 +32,7 @@
                     <td><?= $region['regID'] ?></td>
                     <td><?= $region['regNombre'] ?></td>
                     <td>
-                        <a href="" class="btn btn-outline-secondary">
+                        <a href="formModificarRegion.php?regID=<?= $region['regID'] ?>" class="btn btn-outline-secondary">
                             Modificar
                         </a>
                     </td>
