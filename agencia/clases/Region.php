@@ -32,6 +32,25 @@
             return $this;
         }
 
+        public function agregarRegion()
+        {
+            $regNombre = $_POST['regNombre'];
+            $link = Conexion::conectar();
+            $sql = "INSERT INTO regiones
+                        VALUE 
+                            ( DEFAULT , :regNombre )";
+            $stmt = $link->prepare($sql);
+            $stmt->bindParam(':regNombre', $regNombre, PDO::PARAM_STR);
+
+            if( $stmt->execute() ){
+                //registramos atributos
+                $this->setRegID( $link->lastInsertId() );
+                $this->setRegNombre($regNombre);
+                return $this;
+            }
+            return false;
+        }
+        
         ##############################
         ##### getters & setters ######
         /**

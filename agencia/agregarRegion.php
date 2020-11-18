@@ -1,5 +1,9 @@
 <?php
     require 'config/config.php';
+    require 'clases/Conexion.php';
+    require 'clases/Region.php';
+    $Region = new Region;
+    $chequeo = $Region->agregarRegion();
     include 'includes/over-all-header.html';
     include 'includes/nav.php';
 ?>
@@ -7,9 +11,19 @@
     <main class="container">
 
         <h1>Alta de una región</h1>
-
-            <div class="alert alert-success border-success shadow-sm col-6 mx-auto p-4">
-                Región .... agregadad correctamente.
+<?php
+        $css = 'danger';
+        $mensaje = 'No se pudo agregar la región';
+        if( $chequeo ){
+            $css = 'success';
+            $mensaje = 'Región: '.$Region->getRegNombre().' agregada correctamente.';
+        }
+?>
+            <div class="alert alert-<?= $css ?> shadow-sm col-6 mx-auto p-4">
+                    <?= $mensaje ?>. <br>
+                <a href="adminRegiones.php" class="btn btn-outline-secondary">
+                    volver a panel
+                </a>
             </div>
 
     </main>
