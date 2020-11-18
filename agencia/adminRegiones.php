@@ -19,7 +19,7 @@
                     <th>Región</th>
                     <th>
                         <a href="formAgregarRegion.php" class="btn btn-outline-secondary">
-                            Agregar
+                            Agregar <i class="far fa-plus-square ml-1"></i>
                         </a>
                     </th>
                 </tr>
@@ -33,12 +33,12 @@
                     <td><?= $region['regNombre'] ?></td>
                     <td>
                         <a href="formModificarRegion.php?regID=<?= $region['regID'] ?>" class="btn btn-outline-secondary">
-                            Modificar
+                            Modificar <i class="far fa-edit ml-1"></i>
                         </a>
                     </td>
                     <td>
                         <a href="" class="btn btn-outline-secondary">
-                            Eliminar
+                            Eliminar <i class="far fa-minus-square ml-1"></i>
                         </a>
                     </td>
                 </tr>

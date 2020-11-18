@@ -22,7 +22,7 @@
                 <th>Disponibles</th>
                 <th colspan="2">
                     <a href="formAgregarDestino.php" class="btn btn-outline-secondary">
-                        Agregar
+                        Agregar <i class="far fa-plus-square ml-1"></i>
                     </a>
                 </th>
             </tr>
@@ -40,12 +40,12 @@
                 <td><?= $destino['destDisponibles'] ?></td>
                 <td>
                     <a href="formModificarDestino.php" class="btn btn-outline-secondary">
-                        Modificar
+                        Modificar <i class="far fa-edit ml-1"></i>
                     </a>
                 </td>
                 <td>
                     <a href="" class="btn btn-outline-secondary">
-                        Eliminar
+                        Eliminar <i class="far fa-minus-square ml-1"></i>
                     </a>
                 </td>
             </tr>
