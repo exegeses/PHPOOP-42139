@@ -25,7 +25,26 @@
             $destinos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             return $destinos;
         }
-        
+
+        public function verDestinoPorID()
+        {
+            $destID = $_GET['destID'];
+            $link = Conexion::conectar();
+            $sql = "SELECT destID, destNombre, 
+                            d.regID, r.regNombre, 
+                            destPrecio, 
+                            destAsientos, destDisponibles, 
+                            destActivo 
+                        FROM destinos d, regiones r
+                        WHERE d.regID = r.regID
+                         AND  destID = ".$destID;
+            $stmt = $link->prepare($sql);
+            $stmt->execute();
+            $destino = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $destino;
+        }
+
+
         ###########################
         #### getters & setters
         /**

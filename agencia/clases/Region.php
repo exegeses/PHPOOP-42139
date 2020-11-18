@@ -26,7 +26,10 @@
             $stmt = $link->prepare($sql);
             $stmt->execute();
             $region = $stmt->fetch(PDO::FETCH_ASSOC);
-            return $region;
+            // registramos valores de los atributos
+            $this->setRegID($region['regID']);
+            $this->setRegNombre($region['regNombre']);
+            return $this;
         }
 
         ##############################
